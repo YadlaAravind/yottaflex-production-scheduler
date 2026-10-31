@@ -1,0 +1,6 @@
+case_id,scenario,entity_id,related_entity_id,description,expected_violation
+GT-001,machine_overlap,MACH-001,OP-2026-000001,Two operations are assigned to the same machine during overlapping time periods.,Machine capacity conflict
+GT-002,precedence_violation,ORD-2026-000001,OP-2026-000002,A later operation is scheduled before its preceding operation.,Operation sequence constraint violated
+GT-003,material_before_availability,OP-2026-000001,LOT-2026-000187,An operation attempts to consume material before its inventory lot becomes available.,Material availability constraint violated
+GT-004,outside_shift,MACH-001,2026-11-01 16:00:00,An operation is scheduled outside the machine's available shift.,Machine calendar constraint violated
+GT-005,omitted_changeover,MACH-001,PROD-2026-000095,A product transition is scheduled without applying the required changeover time.,Sequence-dependent changeover omitted

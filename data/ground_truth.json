@@ -1,0 +1,42 @@
+[
+    {
+        "case_id": "GT-001",
+        "scenario": "machine_overlap",
+        "entity_id": "MACH-001",
+        "related_entity_id": "OP-2026-000001",
+        "description": "Two operations are assigned to the same machine during overlapping time periods.",
+        "expected_violation": "Machine capacity conflict"
+    },
+    {
+        "case_id": "GT-002",
+        "scenario": "precedence_violation",
+        "entity_id": "ORD-2026-000001",
+        "related_entity_id": "OP-2026-000002",
+        "description": "A later operation is scheduled before its preceding operation.",
+        "expected_violation": "Operation sequence constraint violated"
+    },
+    {
+        "case_id": "GT-003",
+        "scenario": "material_before_availability",
+        "entity_id": "OP-2026-000001",
+        "related_entity_id": "LOT-2026-000187",
+        "description": "An operation attempts to consume material before its inventory lot becomes available.",
+        "expected_violation": "Material availability constraint violated"
+    },
+    {
+        "case_id": "GT-004",
+        "scenario": "outside_shift",
+        "entity_id": "MACH-001",
+        "related_entity_id": "2026-11-01 16:00:00",
+        "description": "An operation is scheduled outside the machine's available shift.",
+        "expected_violation": "Machine calendar constraint violated"
+    },
+    {
+        "case_id": "GT-005",
+        "scenario": "omitted_changeover",
+        "entity_id": "MACH-001",
+        "related_entity_id": "PROD-2026-000095",
+        "description": "A product transition is scheduled without applying the required changeover time.",
+        "expected_violation": "Sequence-dependent changeover omitted"
+    }
+]

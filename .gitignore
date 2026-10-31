@@ -1,0 +1,36 @@
+# Python
+venv/
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+
+# Node
+node_modules/
+frontend/dist/
+frontend/.vite/
+
+# Secrets
+.env
+.env.*
+!.env.example
+
+# Logs and temporary files
+*.log
+.DS_Store
+Thumbs.db
+
+# Test and backup databases
+backend/yottaflex_changeover_test*.db
+backend/yottaflex_generated.db
+
+# SQLite databases and backups
+*.db
+*.sqlite
+*.sqlite3
+*.db-*
+*.bak
+
+# Python backup files
+*.py.bak
