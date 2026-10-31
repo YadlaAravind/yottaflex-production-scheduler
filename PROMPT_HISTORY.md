@@ -16,6 +16,12 @@ AI assistance was used for problem understanding, database design, backend and f
 
 The following prompts summarize the major categories of AI assistance used during development. They are representative summaries and are not claimed to be exact copies of every prompt submitted.
 
+### Additional Representative Prompt – End-to-End Project Development
+
+**Prompt:**
+
+"I am developing a YottaFlex Production Scheduler as part of an AI Forward Deployed Engineer technical challenge. Help me build an end-to-end manufacturing production scheduling system using Python, FastAPI, SQLAlchemy, SQLite, and React. The scheduler should consider production order priorities, operation routing and precedence, machine eligibility and capacity, machine calendars, labor shifts, material availability, and sequence-dependent changeover times. Include APIs for production schedules, unscheduled operations, machines, and analytics. Help me validate scheduling constraints, identify conflicts, debug issues, and document the architecture, setup instructions, assumptions, limitations, and validation results. Explain the implementation step by step and provide practical commands for testing the application."
+
 ### Prompt 1 – Understanding the Problem
 
 Help me understand the production scheduling problem and identify the major requirements, entities, constraints, and expected deliverables.
